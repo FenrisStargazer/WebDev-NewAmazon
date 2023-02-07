@@ -1,5 +1,6 @@
 // variable overrides go here
 
+$primary: black;
 
 // import all of bootstrap here
 
@@ -9,11 +10,45 @@
 
 
 #intro-block {
+    height: 60vh;
+    background-color: lightgrey;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#content {
-    flex: 2;
+#intro-block-text{
+    width: 50vh;
+    text-align: center;
+}
+
+ul {
+    background-color: gray;
+}
+
+#sub-section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#sub-section-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+}
+
+#sub-1-text {
+    width: 50vh;
+}
+
+#footer {
+    padding-top: 20px;
+    height: 5vh;
+    background-color: gray;
 }
