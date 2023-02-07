@@ -1,0 +1,14 @@
+{
+  "name": "nextamazon.com",
+  "version": "1.0.0",
+  "description": "Website used in WebDev school group. Will be a personal site tied to jeff bazos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Peterson",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

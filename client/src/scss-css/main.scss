@@ -1,0 +1,19 @@
+// variable overrides go here
+
+
+// import all of bootstrap here
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// add scss code here
+
+
+#intro-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#content {
+    flex: 2;
+}
