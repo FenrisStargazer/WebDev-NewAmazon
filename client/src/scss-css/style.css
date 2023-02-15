@@ -1,0 +1,84 @@
+:root {
+    --primary: #BDCDD6;
+    --secondary: #93BFCF;
+    --font-color: #18122B;
+    --header-color: #6096B4;
+    --info: #0008C1;
+
+    --primary-dark: #18122B;
+    --secondary-dark: #443C68;
+    --font-color-dark: #EEE9DA;
+    --header-color-dark: #635985;
+    --info-dark: #635985;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--font-color);
+}
+
+
+#intro-block {
+    height: 60vh;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#intro-block.dark {
+    background-color: var(--secondary-dark);
+}
+
+#intro-block-text{
+    width: 50vh;
+    text-align: center;
+}
+
+#nav-bar {
+    background-color: var(--header-color);
+}
+
+#nav-bar.dark {
+    background-color: var(--header-color-dark);
+}
+
+#sub-section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#sub-section-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+}
+
+#settings-box.dark {
+    color: var(--font-color);
+}
+
+#sub-1-text {
+    width: 50vh;
+}
+
+#footer {
+    padding-top: 20px;
+    height: 5vh;
+    background-color: var(--header-color);
+}
+
+#footer.dark {
+    background-color: var(--header-color-dark);
+}
+
+.dark {
+    background-color: var(--primary-dark);
+    color: var(--font-color-dark);
+}
