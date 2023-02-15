@@ -60,6 +60,8 @@ body {
     padding-top: 80px;
 }
 
+img {width: 80vh;}
+
 #settings-box.dark {
     color: var(--font-color);
 }
