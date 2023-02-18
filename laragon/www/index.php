@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextAmazon</title>
+    <link rel="stylesheet" href="./scss-css/main.css">
+    <link rel="stylesheet" href="./scss-css/style.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/accessibility.js"></script>
+</head>
+<body>
+    <ul class="nav justify-content-center" id="nav-bar">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link4</a>
+        </li>
+        <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          <a class="nav-link" href="#">Accessibility options</a>
+        </li>
+      </ul>
+
+      <div id="intro-block" class="text-resize">
+        <div id="intro-block-text" class="a">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+            vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+            hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+            gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+            risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+            a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+            lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+            ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+          </p>
+        </div>
+
+        <div id="intro-img">
+          <img src="./assets/bezos.jpg" alt="Random img">
+        </div>
+      </div>
+
+      <div id="tabs">
+        <div id="sub-section-1">
+          <div>
+            <img src="./assets/bezos.jpg" alt="temp-img">
+          </div>
+
+          <div id="sub-1-text" class="text-resize">
+            <h2>Sub-heading</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+              vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+              hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+              gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+              risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+              a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+              lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+              ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+            </p>
+          </div>
+        </div>
+
+
+        <div id="sub-section-2" class="text-resize">
+          <div>
+            <img src="./assets/bezos.jpg" alt="temp-img">
+          </div>
+
+          <div id="sub-1-text">
+            <h2>Sub-heading</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+              vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+              hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+              gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+              risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+              a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+              lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+              ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+
+      <!--Offcanvas card used for accessibility settings.-->
+      <div class="offcanvas offcanvas-start settings-box" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">Accessibility options</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="theme-change-btn" id="flexSwitchCheckDefault" onclick="colorTheme()">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode / Light </label>
+            </div>
+
+            <label for="customRange1" class="form-label">Example range</label>
+            <input type="range" id="font-range" class="form-range" min="10" max="25" id="customRange1" onclick="changeFontSize()">
+
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+
+      </div>
+</body>
+</html>
