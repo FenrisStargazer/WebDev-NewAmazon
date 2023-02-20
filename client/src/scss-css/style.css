@@ -12,6 +12,28 @@
     --info-dark: #635985;
 }
 
+@media screen and (max-width: 480px) {
+    body{
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body{
+
+    }
+
+    img {
+        width: 60px;
+    }
+}
+
 body {
     background-color: var(--primary);
     color: var(--font-color);
