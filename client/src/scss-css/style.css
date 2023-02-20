@@ -13,24 +13,70 @@
 }
 
 @media screen and (max-width: 480px) {
-    body{
+
+    img {
+        width: 100%;
+    }
+
+    #content-section1 {
+        flex-direction: column;
+    }
+    
+    #content-section2 {
+        flex-direction: column;
+    }
+
+    p {
+
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    body{
+    
+    img {
+        width: 100%;
+    }
+
+    #content-section1 {
+        flex-direction: column;
+    }
+    
+    #content-section2 {
+        flex-direction: column;
+    }
+
+    p {
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    body{
+    
+    img {
+        width: 300px;
+    }
+    
+    #content-section2 {
+        flex-direction: row-reverse;
+    }
+
+    p {
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    body{
-
-    }
 
     img {
-        width: 60px;
+        width: 400px;
+    }
+    
+    #content-section2 {
+        flex-direction: row-reverse;
+    }
+
+    p {
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    #content-section2 {
+        flex-direction: row-reverse;
     }
 }
 
@@ -44,11 +90,29 @@ body {
     height: 60vh;
     background-color: var(--secondary);
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color: var(--font-color);
+    background-image: url('../assets/banner-image.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
+
+#content-section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#content-section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+}
+
 
 #intro-block.dark {
     background-color: var(--secondary-dark);
@@ -67,29 +131,12 @@ body {
     background-color: var(--header-color-dark);
 }
 
-#sub-section-1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-#sub-section-2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 80px;
-}
-
-img {width: 60vh;}
 
 #settings-box.dark {
     color: var(--font-color);
 }
 
-#sub-1-text {
+#about-1-text {
     width: 50vh;
 }
 
