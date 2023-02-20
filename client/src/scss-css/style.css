@@ -1,14 +1,14 @@
 :root {
-    --primary: #BDCDD6;
+    --primary: #FFFBED;
     --secondary: #93BFCF;
-    --font-color: #18122B;
-    --header-color: #6096B4;
+    --font-color: #2C1100;
+    --header-color: #AFA280;
     --info: #0008C1;
 
-    --primary-dark: #18122B;
+    --primary-dark: #252525;
     --secondary-dark: #443C68;
-    --font-color-dark: #EEE9DA;
-    --header-color-dark: #635985;
+    --font-color-dark: #FFFBED;
+    --header-color-dark: #2C1100;
     --info-dark: #635985;
 }
 
@@ -25,6 +25,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    color: var(--font-color);
 }
 
 #intro-block.dark {
@@ -60,7 +61,7 @@ body {
     padding-top: 80px;
 }
 
-img {width: 80vh;}
+img {width: 60vh;}
 
 #settings-box.dark {
     color: var(--font-color);
