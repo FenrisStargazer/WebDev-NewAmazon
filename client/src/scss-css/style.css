@@ -77,6 +77,28 @@ body {
     color: var(--font-color);
 }
 
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+#myWorkAccordion {
+    width: 75%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.accordion {
+    text-align: center;
+}
+
+.accordion-button {
+    text-align: center;
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
 
 #intro-block {
     height: 60vh;
