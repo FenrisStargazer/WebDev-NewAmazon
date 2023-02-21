@@ -72,6 +72,11 @@
     }
 }
 
+#acc-btn {
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
+
 body {
     background-color: var(--primary);
     color: var(--font-color);
@@ -96,8 +101,6 @@ body {
 
 .accordion-button {
     text-align: center;
-    background-color: var(--header-color);
-    color: var(--font-color);
 }
 
 #intro-block {
@@ -167,4 +170,22 @@ body {
 .dark {
     background-color: var(--primary-dark);
     color: var(--font-color-dark);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: var(--header-color);
+    padding: 50px;
+    border-radius: 15px;
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
 }
