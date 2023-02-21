@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NextAmazon</title>
     <link rel="stylesheet" href="./scss-css/main.css">
     <link rel="stylesheet" href="./scss-css/style.css">
@@ -13,16 +13,16 @@
 <body>
     <ul class="nav justify-content-center" id="nav-bar">
         <li class="nav-item">
-          <a class="nav-link" href="#">Link1</a>
+          <a class="nav-link" href="#about-me">About me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link2</a>
+          <a class="nav-link" href="#">My Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link3</a>
+          <a class="nav-link" href="#">Testimonials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link4</a>
+          <a class="nav-link" href="#">Contact Me</a>
         </li>
         <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
           <a class="nav-link" href="#">Accessibility options</a>
@@ -30,67 +30,202 @@
       </ul>
 
       <div id="intro-block" class="text-resize">
-        <div id="intro-block-text" class="a">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-            vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-            hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-            gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-            risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-            a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-            lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-            ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
-          </p>
+        <h1>Jeff Bezos</h1>
+      </div>
+
+      <div id="content-section">
+        <div id="content-section1">
+          <div>
+            <img src="./assets/bezos.jpg" alt="temp-img">
+          </div>
+
+          <div id="about-1-text" class="text-resize">
+            <h2>About me</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+              vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+              hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+              gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+              risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+              a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+              lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+              ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+            </p>
+            
+          </div>
         </div>
 
-        <div id="intro-img">
-          <img src="./assets/bezos.jpg" alt="Random img">
+
+        <div id="content-section2" class="text-resize">
+          <div>
+            <img src="./assets/bezosVsMusk.jpg" alt="temp-img">
+          </div>
+
+          <div id="about-1-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+              vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+              hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+              gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+              risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+              a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+              lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+              ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div id="tabs">
-        <div id="sub-section-1">
-          <div>
-            <img src="./assets/bezos.jpg" alt="temp-img">
+      <div>
+        <div class="accordion" id="myWorkAccordion">
+          
+          <h2>My Work</h2>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#myWorkAccordian">
+              <div class="accordion-body">
+                <div id="content-section1">
+                  <div>
+                    <img src="./assets/amazonBuilding.png" alt="temp-img">
+                  </div>
+        
+                  <div id="about-1-text" class="text-resize">
+                    <h2>About me</h2>
+        
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                    </p>
+                  </div>
+                </div>            
+              </div>
+            </div>
           </div>
 
-          <div id="sub-1-text" class="text-resize">
-            <h2>Sub-heading</h2>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-              vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-              hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-              gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-              risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-              a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-              lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-              ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
-            </p>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#myWorkAccordian">
+              <div class="accordion-body">
+                <div id="content-section2" class="text-resize">
+                  <div>
+                    <img src="./assets/blueOrigin.jpg" alt="temp-img">
+                  </div>
+        
+                  <div id="about-1-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                    </p>
+                  </div>
+                </div>            
+              </div>
+            </div>
           </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#myWorkAccordian">
+              <div class="accordion-body">
+                <div id="content-section1">
+                  <div>
+                    <img src="./assets/washingtonPostBldg.jpg" alt="temp-img">
+                  </div>
+        
+                  <div id="about-1-text" class="text-resize">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                    </p>
+                  </div>
+                </div>            
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Accordion Item #4
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#myWorkAccordian">
+              <div class="accordion-body">
+                <div id="content-section2" class="text-resize">
+                  <div>
+                    <img src="./assets/bezosMuseumDonations.jpg" alt="temp-img">
+                  </div>
+        
+                  <div id="about-1-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                    </p>
+                  </div>
+                </div>            
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Accordion Item #5
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#myWorkAccordian">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
+      <div id="content-section">
 
-        <div id="sub-section-2" class="text-resize">
-          <div>
-            <img src="./assets/bezos.jpg" alt="temp-img">
-          </div>
-
-          <div id="sub-1-text">
-            <h2>Sub-heading</h2>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-              vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-              hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-              gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-              risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-              a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-              lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-              ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
-            </p>
-          </div>
-        </div>
       </div>
       
 

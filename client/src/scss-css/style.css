@@ -1,15 +1,75 @@
 :root {
-    --primary: #BDCDD6;
+    --primary: #FFFBED;
     --secondary: #93BFCF;
-    --font-color: #18122B;
-    --header-color: #6096B4;
+    --font-color: #2C1100;
+    --header-color: #AFA280;
     --info: #0008C1;
 
-    --primary-dark: #18122B;
+    --primary-dark: #252525;
     --secondary-dark: #443C68;
-    --font-color-dark: #EEE9DA;
-    --header-color-dark: #635985;
+    --font-color-dark: #FFFBED;
+    --header-color-dark: #2C1100;
     --info-dark: #635985;
+}
+
+@media screen and (max-width: 480px) {
+
+    img {
+        width: 100%;
+    }
+
+    #content-section1 {
+        flex-direction: column;
+    }
+    
+    #content-section2 {
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    img {
+        width: 100%;
+    }
+
+    #content-section1 {
+        flex-direction: column;
+    }
+    
+    #content-section2 {
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    img {
+        width: 300px;
+    }
+    
+    #content-section2 {
+        flex-direction: row-reverse;
+    }
+
+
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    img {
+        width: 400px;
+    }
+    
+    #content-section2 {
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+    #content-section2 {
+        flex-direction: row-reverse;
+    }
 }
 
 body {
@@ -17,15 +77,56 @@ body {
     color: var(--font-color);
 }
 
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+#myWorkAccordion {
+    width: 75%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.accordion {
+    text-align: center;
+}
+
+.accordion-button {
+    text-align: center;
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
 
 #intro-block {
     height: 60vh;
     background-color: var(--secondary);
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    color: var(--font-color);
+    background-image: url('../assets/banner-image.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
+
+#content-section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#content-section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+}
+
 
 #intro-block.dark {
     background-color: var(--secondary-dark);
@@ -44,29 +145,12 @@ body {
     background-color: var(--header-color-dark);
 }
 
-#sub-section-1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-#sub-section-2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 80px;
-}
-
-img {width: 80vh;}
 
 #settings-box.dark {
     color: var(--font-color);
 }
 
-#sub-1-text {
+#about-1-text {
     width: 50vh;
 }
 
