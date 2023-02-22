@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user: 'Test',
   password: 'CA7OWu',
-  database: 'SampleApp',
+  database: 'nextamazon',
 })
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
@@ -17,10 +17,6 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 router.get('/', function(req, res, next) { 
 
   connection.query(`SELECT * FROM USERS;`, function(err, rows) {
-    var user = rows[0].username;
-    console.log(user);
-    var password = rows[0].password;
-    console.log(password);
   });
 
   res.status(201).send({msg: "Success"});

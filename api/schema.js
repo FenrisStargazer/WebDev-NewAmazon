@@ -1,13 +1,13 @@
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "localhost",
+  host: 'localhost',
   user: 'Test',
   password: 'CA7OWu',
 });
 
 var conDb = mysql.createConnection({
-    host: "localhost",
+    host: 'localhost',
     user: 'Test',
     password: 'CA7OWu',
     database: 'nextamazon'
