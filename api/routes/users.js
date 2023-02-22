@@ -16,7 +16,11 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 /* GET users listing. */
 router.get('/', function(req, res, next) { 
 
-  connection.query(`SELECT * FROM USERS;`, function(err, rows) {
+  connection.query(`SELECT * FROM admin;`, function(err, rows) {
+    var user = rows[0].username;
+    console.log(user);
+    var password = rows[0].password;
+    console.log(password);
   });
 
   res.status(201).send({msg: "Success"});
@@ -35,7 +39,7 @@ router.post('/', urlencodedParser, (req, res) => {
     try {
       console.log(username);
       console.log(password);
-      connection.query(`INSERT INTO USERS VALUE('${username}', '${password}');`);
+      connection.query(`INSERT INTO admin VALUE('${username}', '${password}');`);
       res.status(201).send({ msg: 'Created User' });
     } catch (err) {
       console.log(err);
