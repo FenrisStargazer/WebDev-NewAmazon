@@ -16,13 +16,13 @@
           <a class="nav-link" href="#about-me">About me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">My Work</a>
+          <a class="nav-link" href="#myWorkAccordion">My Work</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Testimonials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Me</a>
+          <a class="nav-link" href="#contact-container">Contact Me</a>
         </li>
         <li class="nav-item" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
           <a class="nav-link" href="#">Accessibility options</a>
@@ -35,12 +35,12 @@
 
       <div id="content-section">
         <div id="content-section1">
-          <div>
+          <div id="about-me">
             <img src="./assets/bezos.jpg" alt="temp-img">
           </div>
 
           <div id="about-1-text" class="text-resize">
-            <h2>About me</h2>
+            <h2 >About me</h2>
 
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
@@ -229,15 +229,20 @@
         <form id="contact-form" action="mailto:test@email.com" method="post" enctype="text/plain">
           <h2>Contact Me</h2>
           <div class="form-group">
+
             <label for="exampleFormControlInput1">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
             <label for="exampleFormControlInput1">Name</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            <label for="exampleFormControlTextarea1">Email text:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+
           </div>
 
           <button style="margin: 20px;" type="submit" class="btn btn-primary">Submit</button>
