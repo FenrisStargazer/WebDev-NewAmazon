@@ -3,10 +3,12 @@ function colorTheme() {
     const intro = document.getElementById('intro-block');
     const nav = document.getElementById('nav-bar');
     const foot = document.getElementById('footer');
+    const popout = document.getElementById('staticBackdrop');
     body.classList.toggle("dark");
     intro.classList.toggle("dark");
     nav.classList.toggle("dark");
     footer.classList.toggle("dark");
+    popout.classList.toggle('dark')
 }
 
 function changeFontSize() {

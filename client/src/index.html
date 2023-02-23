@@ -13,7 +13,7 @@
 <body>
     <ul class="nav justify-content-center" id="nav-bar">
         <li class="nav-item">
-          <a class="nav-link" href="#about-me">About me</a>
+          <a class="nav-link" id="test" href="#about-me">About me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#myWorkAccordion">My Work</a>
@@ -30,17 +30,21 @@
       </ul>
 
       <div id="intro-block" class="text-resize">
-        <h1>Jeff Bezos</h1>
+        <h1 id="main-header">Jeff Bezos</h1>
       </div>
 
       <div id="content-section">
+
+        <div id="header-container">
+          <h2 id="header">About me</h2>
+        </div>
+
         <div id="content-section1">
           <div id="about-me">
             <img src="./assets/bezos.jpg" alt="temp-img">
           </div>
 
           <div id="about-1-text" class="text-resize">
-            <h2 >About me</h2>
 
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
@@ -78,9 +82,12 @@
       </div>
 
       <div>
-        <div class="accordion" id="myWorkAccordion">
 
-          <h2>My Work</h2>
+        <div id="header-container">
+          <h2 id="header">My Work</h2>
+        </div>
+
+        <div class="accordion" id="myWorkAccordion">
 
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -207,27 +214,16 @@
             </div>
           </div>
 
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Accordion Item #5
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#myWorkAccordian">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-
-
+          
         </div>
+
+      <div id="header-container">
+        <h2 id="header">Contact Me</h2>
+      </div>
 
       <div id="contact-container">
 
         <form id="contact-form" action="mailto:test@email.com" method="post" enctype="text/plain">
-          <h2>Contact Me</h2>
           <div class="form-group">
 
             <label for="exampleFormControlInput1">Email address</label>
