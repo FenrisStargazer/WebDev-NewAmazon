@@ -1,15 +1,15 @@
 :root {
-    --primary: #FFFBED;
-    --secondary: #93BFCF;
-    --font-color: #2C1100;
-    --header-color: #AFA280;
-    --info: #0008C1;
+    --primary: 	#f2f2f2;
+    --secondary: #232f3e;
+    --font-color: 	#000000;
+    --header-color: #146eb4;
+    --info: #ff9900;
 
-    --primary-dark: #252525;
-    --secondary-dark: #443C68;
-    --font-color-dark: #FFFBED;
-    --header-color-dark: #2C1100;
-    --info-dark: #635985;
+    --primary-dark: #000000;
+    --secondary-dark: #ff9900;
+    --font-color-dark: 	#f2f2f2;
+    --header-color-dark: #232f3e;
+    --info-dark: #146eb4;
 }
 
 @media screen and (max-width: 480px) {
@@ -72,9 +72,46 @@
     }
 }
 
+.nav-link {
+    color: var(--font-color-dark);
+
+}
+
+#staticBackdrop.dark {
+    background-color: var(--primary-dark);
+}
+
+#header-container{
+    margin-top: 30px;
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+#header {
+    font-size: 50px;
+    padding: 20px;
+    color: var(--info);
+}
+
+#main-header {
+    font-size: 150px;
+    color: var(--primary);
+    font-family: monospace;
+}
+
+img {
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--info);
+}
+
 #acc-btn {
     background-color: var(--header-color);
     color: var(--font-color);
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--info);
 }
 
 body {
@@ -86,6 +123,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 99;
+    color: white;
 }
 
 #myWorkAccordion {
@@ -148,7 +186,6 @@ body {
     background-color: var(--header-color-dark);
 }
 
-
 #settings-box.dark {
     color: var(--font-color);
 }
@@ -179,6 +216,9 @@ body {
     background-color: var(--header-color);
     padding: 50px;
     border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--info);
 }
 
 #contact-container {

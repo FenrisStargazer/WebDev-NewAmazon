@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="./scss-css/style.css">
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/accessibility.js"></script>
+    <script src="./js/addWork.js"></script>
 </head>
 <body>
+
+    <!-- Navbar -->
+
     <ul class="nav justify-content-center" id="nav-bar">
         <li class="nav-item">
-          <a class="nav-link" href="#about-me">About me</a>
+          <a class="nav-link" id="test" href="#about-me">About me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#myWorkAccordion">My Work</a>
@@ -29,18 +33,28 @@
         </li>
       </ul>
 
+      <!-- Intro card that displays main header -->
+
       <div id="intro-block" class="text-resize">
-        <h1>Jeff Bezos</h1>
+        <h1 id="main-header">Jeff Bezos</h1>
       </div>
 
+      <!-- Content-section marks start of page main content -->
+
       <div id="content-section">
+
+        <!-- About me section -->
+
+        <div id="header-container">
+          <h2 id="header">About me</h2>
+        </div>
+
         <div id="content-section1">
           <div id="about-me">
             <img src="./assets/bezos.jpg" alt="temp-img">
           </div>
 
           <div id="about-1-text" class="text-resize">
-            <h2 >About me</h2>
 
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
@@ -77,10 +91,12 @@
         </div>
       </div>
 
-      <div>
-        <div class="accordion" id="myWorkAccordion">
 
-          <h2>My Work</h2>
+        <div id="header-container">
+          <h2 id="header">My Work</h2>
+        </div>
+
+        <div class="accordion" id="myWorkAccordion">
 
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -178,12 +194,12 @@
 
 
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <h2 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                 Accordion Item #4
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#myWorkAccordian">
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#myWorkAccordian">
               <div class="accordion-body">
                 <div id="content-section2" class="text-resize">
                   <div>
@@ -209,25 +225,46 @@
 
 
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <h2 class="accordion-header" id="heading5">
+              <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
                 Accordion Item #5
               </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#myWorkAccordian">
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#myWorkAccordian">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div id="content-section2" class="text-resize">
+                  <div>
+                    <img src="./assets/bezosMuseumDonations.jpg" alt="temp-img">
+                  </div>
+        
+                  <div id="about-1-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
+                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
+                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
+                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
+                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
+                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
+                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
+                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                    </p>
+                  </div>
+                </div>            
               </div>
             </div>
           </div>
+          
 
 
+        </div>
+
+        <div id="header-container">
+          <h2 id="header">Contact Me</h2>
         </div>
 
       <div id="contact-container">
 
         <form id="contact-form" action="mailto:test@email.com" method="post" enctype="text/plain">
-          <h2>Contact Me</h2>
           <div class="form-group">
 
             <label for="exampleFormControlInput1">Email address</label>
