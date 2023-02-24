@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/admin');
 
 var app = express();
 
@@ -22,7 +22,7 @@ var bodyParser = require('body-parser')
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/admin', usersRouter);
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
