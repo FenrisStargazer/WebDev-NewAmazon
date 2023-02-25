@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Login</title>
+    <link rel="stylesheet" href="./scss-css/main.css">
+    <link rel="stylesheet" href="./scss-css/style.css">
+    <link rel="stylesheet" href="./scss-css/adminLogin.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/admin.js"></script>
+</head>
+<body>
+    <div id="login-body">
+        <div class="input-group flex-nowrap" id="userInput">
+            <span class="input-group-text" id="addon-wrapping">Username:</span>
+            <input type="text" class="form-control" id="admin-name" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+
+        <div class="input-group flex-nowrap" id="passInput">
+            <span class="input-group-text" id="addon-wrapping">Password:</span>
+            <input type="text" class="form-control" id="admin-pass" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg" onclick="logAdmin()">Login</button>
+    </div>
+</body>
+</html>
