@@ -7,6 +7,7 @@ const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/admin');
+var workRouter = require('./routes/work');
 
 var app = express();
 
@@ -26,6 +27,7 @@ var bodyParser = require('body-parser')
 
 app.use('/', indexRouter);
 app.use('/admin', usersRouter);
+app.use('/work', workRouter);
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
