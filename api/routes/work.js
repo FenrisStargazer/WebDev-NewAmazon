@@ -25,19 +25,38 @@ router.get('/', function(req, res, next) {
 
 });
 
-router.post('/:title/:content', function(req, res, next) {
+router.post('/:title/:content', function(req, response, next) {
     const { title, content } = req.params;
 
     connection.query(`INSERT INTO work (title, work_content)
                     VALUES ("${title}", "${content}");`, function(err, rows) {
                         if(err == null) {
-                            res.status(200).send( {msg: 'Work Posted!'} );
+                            response.status(200);
+                            response.end();
                         } else {
-                            res.status(400).send( {msg: err } );
+                            response.status(400).send( {msg: err } );
+                            response.end();
                         }
                     });
 
     console.log(content);
 });
+
+router.delete('/:id', function(req, response, next) {
+    const {id} = req.params;
+
+    console.log(`DELETE FROM work WHERE work_id=${id}`)
+
+    connection.query(`DELETE FROM work WHERE work_id=${id}`, function(err, res) {
+        if(err == null) {
+            response.status(200);
+            response.end();
+        } else {
+            response.status(400).send( {msg: err } );
+            response.end();
+        }
+    })
+
+})
 
 module.exports = router;
