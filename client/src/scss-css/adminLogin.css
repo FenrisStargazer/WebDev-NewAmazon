@@ -12,6 +12,16 @@
     --info-dark: #146eb4;
 }
 
+#admin-body {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#myWorkAccordion, #testAccordion {
+    padding: 30px;
+}
+
 #login-body {
     border-radius: 15px;
     border-color: #ff9900;
