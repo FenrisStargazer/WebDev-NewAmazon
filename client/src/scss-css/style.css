@@ -126,7 +126,7 @@ body {
     color: white;
 }
 
-#myWorkAccordion {
+#myWorkAccordion, #testAccordion {
     width: 75%;
     margin: auto;
     padding-top: 50px;

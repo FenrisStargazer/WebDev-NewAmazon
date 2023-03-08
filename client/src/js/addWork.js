@@ -1,4 +1,6 @@
-function addWork(elementId) {
+
+
+function addWork(elementId, elementTitle, elementContent) {
     const test = document.getElementById('myWorkAccordion');
     
     const newWorkItem = document.createElement('div');
@@ -29,6 +31,7 @@ function addWork(elementId) {
     textBody.appendChild(text);
     
     newWorkItem.setAttribute('class', 'accordion-item');
+    newWorkItem.setAttribute('id', `${elementId}`);
 
     header.setAttribute('class', 'accordian-header');
     header.setAttribute('id', `heading${elementId}`);
@@ -56,16 +59,9 @@ function addWork(elementId) {
 
     textBody.setAttribute('id','about-1-text');
 
-    accButton.textContent = 'new test work';
+    accButton.textContent = elementTitle;
 
-    text.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum' +
-                      'vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue' +
-                      'hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non' + 
-                      'gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque' +
-                      'risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor' + 
-                      'a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus' +
-                      'lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum' +
-                      'ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.)'
+    text.textContent = elementContent;
 
     test.appendChild(newWorkItem);
 }

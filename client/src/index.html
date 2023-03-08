@@ -10,6 +10,8 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/accessibility.js"></script>
     <script src="./js/addWork.js"></script>
+    <script src="./js/admin.js"></script>
+    <script src="./js/onLoad.js"></script>
 </head>
 <body>
 
@@ -23,7 +25,7 @@
           <a class="nav-link" href="#myWorkAccordion">My Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Testimonials</a>
+          <a class="nav-link" href='../src/adminLogin.html'>Testimonials</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact-container">Contact Me</a>
@@ -51,20 +53,25 @@
 
         <div id="content-section1">
           <div id="about-me">
-            <img src="./assets/bezos.jpg" alt="temp-img">
+            <img src="./assets/bezos.jpg" alt="Jeff Bezos Portrait">
           </div>
 
           <div id="about-1-text" class="text-resize">
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-              vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-              hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-              gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-              risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-              a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-              lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-              ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                   I’m Jeffrey Bezos, but everyone just calls me Jeff. I was born to a couple of 
+                   teenagers in Albuquerque, NM, way back in 1964 (yeah I’m almost 60, hence the 
+                   polished hairdo). Though I mostly grew up in Houston and later Miami. I graduated 
+                   summa cum laude from Princeton University in 1986, with a Bachelor’s in engineering. 
+                   While there I was able to participate in not one but two “prestigious” fraternities, 
+                   Phi Beta Kappa and Tau Beta Pi. This was mostly all thanks to the copious amounts of 
+                   money my adoptive step-father made.
+            </p>
+            <p>
+                  It was during the boring beginning part of my career working in telecommunications and 
+                  banking of all things, that I met my wife of 26-ish years, a novelist and philanthropist 
+                  originally from San Francisco, CA. She is the mother to my three sons and adopted daughter, 
+                  though we recently divorced in 2019 after I cheated on her with some random news anchor/TV personality.
             </p>
             
           </div>
@@ -73,19 +80,24 @@
 
         <div id="content-section2" class="text-resize">
           <div>
-            <img src="./assets/bezosVsMusk.jpg" alt="temp-img">
+            <img src="./assets/bezosVsMusk.jpg" alt="Jeff Bezos Facing Elon Musk">
           </div>
 
           <div id="about-1-text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-              vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-              hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-              gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-              risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-              a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-              lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-              ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+              The other person who’s had a sizeable effect on my life would be my biggest rival, Elon Musk. 
+              He’s the second richest man alive and as weird and incomprehensible as I am morally reprehensible. 
+              Though several billionaires are partaking in this “Space Race: Round II”, Musk and I are practically 
+              the rivaling superpowers of that group. Though he’s a fool if he thinks he’ll ever beat me.
+            </p>
+            <p>
+              He’s only moderately more popular than I am because he makes a fool of himself all over the internet 
+              whereas I have some semblance of dignity and an image to maintain. But even those who don’t know me 
+              undoubtedly know my company, which is probably more than he could say.
+            </p>
+            <p>
+              Also at least I don’t use my children as a media ploy, and didn’t give them nonsensical names that 
+              are going to be remembered and get them laughed at for the rest of their lives.
             </p>
           </div>
         </div>
@@ -101,28 +113,32 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Accordion Item #1
+                Amazon - My Claim to Fame
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#myWorkAccordian">
               <div class="accordion-body">
                 <div id="content-section1">
                   <div>
-                    <img src="./assets/amazonBuilding.png" alt="temp-img">
+                    <img src="./assets/amazonBuilding.png" alt="Amazon HQ">
                   </div>
         
                   <div id="about-1-text" class="text-resize">
-                    <h2>About me</h2>
+                    <h2>How it all began...</h2>
         
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                      Like most billionaires, I don’t do much anymore besides spend all this freaking money 
+                      I’ve accumulated from my widely successful and pretty much globally famous company Amazon. 
+                      I go to a lot of board meetings and a lot of famous-people parties, mostly to flaunt my power 
+                      and wealth to the world and the underlings that make my success possible.
+                    </p>
+                    <p>
+                      Back in the beginning though, I did work really hard getting Amazon off the ground, originally 
+                      as an online book store. Alongside my now ex-wife, I spent many, many hours in a dirty, rented 
+                      garage in Seattle, WA, running things day-to-day and building up the business. Although this was 
+                      hardly any sort of rags to riches story, as I had already had about a decade of working profitable 
+                      computer engineering jobs for decently big companies. And as mentioned before, my family was far 
+                      from poor at this point.
                     </p>
                   </div>
                 </div>            
@@ -134,26 +150,31 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+                Blue Origin - My Obligatory "BILLIONAIRE SPACE RACE" Company
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#myWorkAccordian">
               <div class="accordion-body">
                 <div id="content-section2" class="text-resize">
                   <div>
-                    <img src="./assets/blueOrigin.jpg" alt="temp-img">
+                    <img src="./assets/blueOrigin.jpg" alt="Blue Origin HQ">
                   </div>
         
                   <div id="about-1-text">
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                      Around the year 2000, I started Blue Origin, a “human spaceflight startup”. While 
+                      Amazon was my cash cow, Blue Origin was my baby, my passion. I even made my senior 
+                      graduation speech about how badly I wanted to be the one to get humans out into the 
+                      solar system and turn Earth into some giant nature preserve. Because I really care 
+                      deeply about the Earth’s natural resources (despite exploiting them frequently to cut 
+                      costs and carelessly testing rockets with reckless abandon, ignoring the extreme 
+                      pollution that it contributes...)
+                    </p>
+                    <p>
+                      Though it wasn’t until 2006 that Blue Origin was even really recognized or acknowledged 
+                      by the public. And not until around 2015 that it had any marketable success. But finally 
+                      around 2021, it launched it’s first successful sub-orbital flight with passengers, 
+                      including myself, my half-brother and some other quasi-important people.
                     </p>
                   </div>
                 </div>            
@@ -165,26 +186,32 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+                I'm So Full of Myself I Wanted My Own Media Outlet
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#myWorkAccordian">
               <div class="accordion-body">
                 <div id="content-section1">
                   <div>
-                    <img src="./assets/washingtonPostBldg.jpg" alt="temp-img">
+                    <img src="./assets/washingtonPostBldg.jpg" alt="Washington Post Building">
                   </div>
         
                   <div id="about-1-text" class="text-resize">
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                      In 2013, when I got bored of being a billionaire running a worldwide megacorp, 
+                      I decided to buy out The Washington Post for several million dollars (using some 
+                      sketchy front company kind of tactics that honestly really scream dodging monopoly 
+                      law or tax evasion but y’know whatever). There I successfully turned around the 
+                      business and reinvigorated the target audience, boosting numbers to all time highs 
+                      and bringing the first major profits the company had seen in years.
+                    </p>
+                    <p>
+                      Though of course, as with buying any large communication outlet, there are the 
+                      numerous allegations that I enforce some kind of censorship or control over what’s 
+                      written and released within the paper. Which I can firmly assure is obviously false. 
+                      Why should I care what they write about? I have enough money to fix just about any 
+                      consequences I don’t like. And it’s not like the thoughts of the underpaid masses 
+                      really affects me at all.
                     </p>
                   </div>
                 </div>            
@@ -196,26 +223,29 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading4">
               <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                Accordion Item #4
+                I Don't Really Believe in "Charity"
               </button>
             </h2>
             <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#myWorkAccordian">
               <div class="accordion-body">
                 <div id="content-section2" class="text-resize">
                   <div>
-                    <img src="./assets/bezosMuseumDonations.jpg" alt="temp-img">
+                    <img src="./assets/bezosMuseumDonations.jpg" alt="Jeff Bezos Next to Recovered Shuttle Engine Fragment">
                   </div>
         
                   <div id="about-1-text">
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                      There’s also my “family office” company (a private company that manages a 
+                      disgustingly wealthy persons private investments in the hopes of making them 
+                      more famous and more rich) known as Bezos Expeditions. They’re also the ones 
+                      to handle all my obligatory charity donations when I need a quick tax write-off 
+                      or some good press coverage.
+                    </p>
+                    <p>
+                      Many such efforts included rescuing some Apollo 11 engine pieces from the 
+                      bottom of the ocean, which were donated to the Seattle Museum of Flight. As 
+                      well as funding an innovation center in the Seattle History and Industry Museum 
+                      and a research center in my alma mater, Princeton University.
                     </p>
                   </div>
                 </div>            
@@ -227,26 +257,27 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading5">
               <button class="accordion-button collapsed" id="acc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                Accordion Item #5
+                Fountain of Youth For Billionaires
               </button>
             </h2>
             <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#myWorkAccordian">
               <div class="accordion-body">
-                <div id="content-section2" class="text-resize">
+                <div id="content-section1" class="text-resize">
                   <div>
-                    <img src="./assets/bezosMuseumDonations.jpg" alt="temp-img">
+                    <img src="./assets/altosLabsUnaging.jpg" alt="Unaging Illustration">
                   </div>
         
                   <div id="about-1-text">
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum 
-                      vehicula arcu in ultricies. Curabitur vel porttitor ante. Mauris ut augue 
-                      hendrerit, condimentum lacus at, ornare nunc. Donec elit nunc, ultricies non 
-                      gravida ut, volutpat ut metus. Suspendisse auctor nisi leo, ac pellentesque 
-                      risus fringilla sit amet. Duis neque ante, varius et pharetra faucibus, tempor 
-                      a neque. Curabitur volutpat hendrerit velit id porttitor. Integer eu lacus 
-                      lobortis urna tincidunt volutpat. Fusce erat ante, elementum vel interdum 
-                      ac, semper at erat. Sed a augue nunc. Etiam quis hendrerit enim.
+                      And last, but certainly not least, I have recently co-founded Altos Labs in 2021-2022. 
+                      A biotech company aimed at finding ways of anti-aging (aka “longevity therapeutics”) 
+                      through “cellular reprogramming”, with a top notch array of scientists from all walks 
+                      of life who specialize in this bizarre little niche of genetic/cellular engineering. 
+                      In part so that I can sell this tech to tyrannical rich people for disgusting amounts 
+                      of money and become the world’s first trillionaire. But also so that I might keep myself 
+                      from dying of old age, or from dying nearly so soon. In this way I can continue pursuing 
+                      my dreams of colonizing the solar system and continue exploiting millions of workers 
+                      worldwide on a daily basis, long after my time is through.
                     </p>
                   </div>
                 </div>            

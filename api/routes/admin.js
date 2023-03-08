@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'Test',
-  password: 'K7H4qO',
+  password: '7AC8rI',
   database: 'nextamazon',
 })
 
@@ -17,21 +17,27 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 router.get('/:username/:password', function(req, res, next) { 
   const { username, password } = req.params;
 
-  try {
-    connection.query(`SELECT * FROM admin;`, function(err, rows) {
+  console.log(req.baseUrl);
 
+    connection.query(`SELECT * FROM admin;`, function(err, rows) {
+      if(err) {
+        console.log(err);
+        res.status(401).send( {msg: 'unable to login'} )
+      }
       rows.forEach(element => {
-        if(element.name == username) {
+
+        if(element.name == username && element.password == password) {
           res.status(201).send( {msg: 'login success'} );
         } 
-        console.log(element.name);
-        console.log(username);
+
       });
+
+      if(username != rows[0].name && password != rows[0].password) {
+        console.log(err);
+        res.status(401).send( {msg: 'unable to login'} )
+      }
     });
-  } catch (err) {
-    console.log(err);
-    res.status(401).send( {msg: 'unable to login'} )
-  }
+
 
 });
 

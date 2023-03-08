@@ -1,0 +1,55 @@
+:root {
+    --primary: 	#f2f2f2;
+    --secondary: #232f3e;
+    --font-color: 	#000000;
+    --header-color: #146eb4;
+    --info: #ff9900;
+
+    --primary-dark: #000000;
+    --secondary-dark: #ff9900;
+    --font-color-dark: 	#f2f2f2;
+    --header-color-dark: #232f3e;
+    --info-dark: #146eb4;
+}
+
+#admin-body {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#myWorkAccordion, #testAccordion {
+    padding: 30px;
+}
+
+#login-body {
+    border-radius: 15px;
+    border-color: #ff9900;
+    border-style: solid;
+    border-width: 5px;
+    margin: 50px;
+    background-color: var(--header-color);
+    width: 30%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+}
+
+#userInput {
+    width: 80%;
+    margin: 30px;
+}
+
+#passInput {
+    width: 80%;
+    margin: 30px;
+}
