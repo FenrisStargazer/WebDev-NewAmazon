@@ -1,4 +1,19 @@
 
+# Next Amazon
+
+### Required Frameworks:
+
+#### -- Node.js
+#### -- Laragon
+
+## Client Setup
+
+### 1. Start up
+Once having the local copy of the repo, start by poining the root Loragon folder to the repo folder named "WebDev-NewAmazon".
+
+### 2. Select index.html 
+Once openeing Laragon Web you will be presented with the links in the repo. Start by selecting the "client/" link, then traverse into "src/" link, once selecting the src link the website will render. Some elemetents may be missing from the website before setting up the API. After the API is setup refresh the page for any changes to appear.
+
 ## API Setup
 
 ### 1. Create user in database 
