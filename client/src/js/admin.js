@@ -86,8 +86,6 @@ function logAdmin() {
     .then(response => {
         if(response.status == 201) {
             // Sign user in
-            const temp = "hello";
-            alert(`${temp}`);
             document.location.href = 'admin.html';
     
         } else {
