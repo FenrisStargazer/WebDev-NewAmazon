@@ -29,7 +29,7 @@ Before running the Alter query aboce replace USER and PASSWORD with the informat
 ![Add User Image](http://url/to/img.png)
 
 ### 2. Fill in api credentials
-Once the database user has bein created the user info must be used to fill in the api Credentials. Tere are two places this must be done. First is in the Schema.js file and also in all of the routes that use a connection to the database EX:
+Once the database user has bein created the user info must be used to fill in the api Credentials. Tere are two places this must be done. First is in the Schema.js file and also in all of the 'db.config.js' file which will fill in the routes where needed. EX:
     
 ![Add User Image](http://url/to/img.png)
 ![Add User Image](http://url/to/img.png)
